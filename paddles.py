@@ -14,7 +14,7 @@ class Paddle(Turtle):
         self.shape("square")
         self.shapesize(stretch_wid=1, stretch_len=4, outline=None)
         self.left(90)
-        self.goto(-380 , 0)
+        self.goto(-360 , 0)
         self.speed("fastest")
         self.color("white")
         self.penup()

@@ -43,7 +43,7 @@ class Ball(Turtle):
         self.goto(new_x, new_y)
     
     def speed_up(self) :
-        self.speed += 4
+        self.speed += .9
 
     def reset_speed(self) :
         self.speed = 10 

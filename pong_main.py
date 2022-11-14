@@ -2,6 +2,7 @@ from turtle import Screen
 from paddles import Paddle
 from ball import Ball
 from score import Scoreboard
+from net import Net
 import time
 
 change_direction_y = False
@@ -12,18 +13,23 @@ screen = Screen()
 screen.setup(width = 800, height = 600)
 screen.bgcolor("black")
 screen.title("PONG")
-screen.tracer(0)
+screen.tracer(0.01)
 
 # Create paddles
 paddle_one = Paddle()
 paddle_two = Paddle()
-paddle_two.goto(375,0)
+paddle_two.goto(355,0)
 
 # Create ball
 ball = Ball()
 
 # Create score board
 score = Scoreboard()
+
+# Create Net
+for x in range(20):
+    net = Net()
+    net.goto(0,-250+(x*52))
 
 # Establish paddle control
 screen.listen()
